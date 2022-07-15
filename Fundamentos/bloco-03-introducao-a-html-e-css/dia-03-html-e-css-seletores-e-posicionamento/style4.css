@@ -1,0 +1,19 @@
+div:hover {
+    color: blue;
+    border:2px solid violet;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+#escura {
+    color: blue;
+    font-size: 1cm;
+}
+
+strong {
+    color: blueviolet;
+}
