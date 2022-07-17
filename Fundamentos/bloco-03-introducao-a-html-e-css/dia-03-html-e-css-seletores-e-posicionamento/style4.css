@@ -2,8 +2,9 @@ h3:hover {
     border:2px solid violet;
 }
 
-h3:nth-child(2) {
-    font-style: italic
+div:nth-child(odd) {
+    font-style: italic;
+    background-color: blueviolet;
 }
 
 #primaria {

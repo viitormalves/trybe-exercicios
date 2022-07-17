@@ -2,7 +2,58 @@ ol {
     background-color: yellow;
 }
 
-.par {
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    color: red;
+}
+
+h1, h2 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.linguagens:nth-child(-n+3) {
+    color: blue;
+}
+
+.linguagens ["Java*"] {
+    background-color: pink;
+}
+
+/* .linguagens {
+    background-color: pink;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+
+/* .par {
     color: green;
 }
 
@@ -52,4 +103,4 @@ li.par {
 #trybe:hover {
     font-weight:bold ;
     color: green;
-}
+} */
