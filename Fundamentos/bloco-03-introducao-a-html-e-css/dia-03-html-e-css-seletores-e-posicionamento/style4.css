@@ -2,10 +2,6 @@ h3:hover {
     border:2px solid violet;
 }
 
-h3 {
-    font-style: normal;
-}
-
 h3:nth-child(2) {
     font-style: italic
 }
@@ -18,13 +14,11 @@ h3:nth-child(2) {
 #secundaria {
     color:green;
     text-decoration: overline;
-    font-style: italic;
 }
 
 #complementar {
     color: blueviolet;
     text-decoration: underline;
-
     font-size:40px;
 }
 
