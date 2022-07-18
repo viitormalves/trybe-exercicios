@@ -42,29 +42,30 @@ li em {
 
 a {
     text-decoration: none;
+    list-style: none;
 }
 
-#stack:hover {
+#stack:hover a {
     font-weight:bold ;
     color:orange;
 }
 
-#w3:hover {
+#w3:hover a {
     font-weight:bold ;
     color: greenyellow
 }
 
-#mdn:hover {
+#mdn:hover a {
     font-weight:bold ;
     color: black;
 }
 
-#dev:hover {
+#dev:hover a {
     font-weight:bold ;
     color:yellow
 }
 
-#trybe:hover {
+#trybe:hover a {
     font-weight:bold ;
     color: green;
 }
