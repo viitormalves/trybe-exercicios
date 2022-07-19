@@ -27,13 +27,10 @@ li em {
     font-weight: bold;
 }
 
-.linguagens:nth-child(-n+3) {
+.linguagens li:nth-child(-n+3) {
     color: blue;
 }
 
-/* .linguagens {
-    background-color: pink;
-} */
 
 li[id*="Java"] {
     background-color: pink;
