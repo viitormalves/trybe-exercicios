@@ -19,5 +19,5 @@ for (let index = 0; index < fruits.length; index += 1) {
 if (sum > 15) {
   console.log(sum);
 } else {
-  console.log('valor menor que 16');
+  console.log("valor menor que 16");
 }
