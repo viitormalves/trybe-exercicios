@@ -57,10 +57,59 @@
   </head>
   <body>
     <script>
+
         let head = document.querySelector('body');
         let titulo = document.createElement('h1');
         titulo.innerHTML = 'Exercício 5.2 - JavaScript DOM'
         head.appendChild(titulo);
+
+        let elementBody = document.querySelector('body');
+        let content = document.createElement('main');
+        content.className = 'main-content';
+        elementBody.appendChild(content);
+
+        let elementMain = document.querySelector('main');
+        let section = document.createElement('section');
+        section.className = 'center-content';
+        elementMain.appendChild(section);
+
+        let elementSection = document.querySelector('section');
+        let p = document.createElement('p');
+        p.innerText = 'Alguma coisa no paragrafo'
+        elementSection.appendChild(p);
+
+        let section2 = document.createElement('section');
+        section2.className = 'left-content';
+        elementMain.appendChild(section2);
+
+        let section3 = document.createElement('section');
+        section3.className = 'right-content';
+        elementMain.appendChild(section3);
+
+        let elementImage = document.querySelector('.left-content');
+        let image = document.createElement('img');
+        image.src = 'https://picsum.photos/200';
+        image.className = 'small-image'
+        elementImage.appendChild(image);
+
+        let sect3 = document.querySelectorAll('section')[2];
+        let elementUl = document.createElement('ul');
+        sect3.appendChild(elementUl);
+        let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let i in arrayNumbers) {
+            let li = document.createElement('li');
+            li.innerHTML = arrayNumbers[i];
+            sect3.appendChild(li);
+        }
+
+        for (let i = 1; i <= 3; i += 1) {
+            let h3 = document.createElement('h3');
+            h3.innerText = 'Show' + i;
+            elementMain.appendChild(h3)
+        }
+
+
     </script>
   </body>
 </html>
