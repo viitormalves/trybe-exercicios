@@ -132,3 +132,27 @@ function taskColor(cor) {
 }
 
 taskColor("green");
+
+function selectTask() {
+  let task = document.querySelector(".task");
+  task.addEventListener("click", function () {
+    if (task.className === "task") {
+      task.classList.add("task", "taskSelected");
+    } else {
+      task.className = "task";
+    }
+  });
+}
+selectTask();
+
+function selectDay() {
+  let day = document.querySelector("#days");
+  day.addEventListener("click", function (e) {
+    if (e.target.style.backgroundColor !== "green") {
+      e.target.style.backgroundColor = "green";
+    } else {
+      e.target.style.backgroundColor = null;
+    }
+  });
+}
+selectDay();
