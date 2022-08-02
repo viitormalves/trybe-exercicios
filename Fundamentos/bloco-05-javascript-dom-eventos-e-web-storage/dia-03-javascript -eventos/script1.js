@@ -147,9 +147,12 @@ selectTask();
 
 function selectDay() {
   let day = document.querySelector("#days");
+  let taskColor = document.querySelector(".taskSelected");
+  let color = taskColor.style.backgroundColor;
+
   day.addEventListener("click", function (e) {
-    if (e.target.style.backgroundColor !== "green") {
-      e.target.style.backgroundColor = "green";
+    if (e.target.style.backgroundColor !== color) {
+      e.target.style.backgroundColor = color;
     } else {
       e.target.style.backgroundColor = null;
     }

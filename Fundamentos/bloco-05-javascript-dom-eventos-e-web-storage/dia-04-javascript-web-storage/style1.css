@@ -1,0 +1,23 @@
+  * {
+    margin-left: 20px;
+    background-color: rgb(230, 230, 230);
+  }
+    h1 {
+    background-color: darkgreen;
+    width: 200px;
+    text-align: center;
+    color: white;
+    }
+
+    #boxColor {
+        margin: 20px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    select, input {
+        background-color: white;
+        border: 1px solid black;
+    }
