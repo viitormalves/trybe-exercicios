@@ -1,4 +1,11 @@
-const { sum, myRemove, myFizzBuzz } = require("./sum");
+const {
+  sum,
+  myRemove,
+  myFizzBuzz,
+  encode,
+  decode,
+  techList,
+} = require("./sum");
 
 describe("Testes função sum", () => {
   test("Teste para retornar a soma", () => {
@@ -26,5 +33,64 @@ describe("Testes função myFizzBuzz", () => {
     expect(myFizzBuzz(10)).toBe("buzz");
     expect(myFizzBuzz(4)).toBe(4);
     expect(myFizzBuzz("15")).toBe(false);
+  });
+});
+
+describe("Testes função encode e decode", () => {
+  it("Testando se encode e decode são funções", () => {
+    expect(typeof encode).toBe("function");
+    expect(typeof decode).toBe("function");
+  });
+  it('Converte as vogais "aeiou" nos números 12345', () => {
+    expect(encode("aeiou")).toEqual("12345");
+  });
+  it("Converte os números 12345 nas vogais aeiou", () => {
+    expect(decode("12345")).toEqual("aeiou");
+  });
+  it("Teste não converter as demais letras/números", () => {
+    expect(encode("sdfgh")).toEqual("sdfgh");
+    expect(decode("sdfgh")).toEqual("sdfgh");
+  });
+  it("Teste se o tamanho de string retornada é o mesmo", () => {
+    expect(encode("teste").length).toEqual(5);
+    expect(decode("teste").length).toEqual(5);
+  });
+});
+
+describe("Testa a função techList", () => {
+  it("Testa se a função techList é definida", () => {
+    expect(techList).toBeDefined();
+  });
+  it("Testa se techList é uma função", () => {
+    expect(typeof techList).toBe("function");
+  });
+  it("Lista com 5 tecnologias deve retornar uma lista de objetos ordenados", () => {
+    expect(
+      techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas")
+    ).toEqual([
+      {
+        tech: "CSS",
+        name: "Lucas",
+      },
+      {
+        tech: "HTML",
+        name: "Lucas",
+      },
+      {
+        tech: "JavaScript",
+        name: "Lucas",
+      },
+      {
+        tech: "Jest",
+        name: "Lucas",
+      },
+      {
+        tech: "React",
+        name: "Lucas",
+      },
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], "Lucas")).toBe("Vazio!");
   });
 });
