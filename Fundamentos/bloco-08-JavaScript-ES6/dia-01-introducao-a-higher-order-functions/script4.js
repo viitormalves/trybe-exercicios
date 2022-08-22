@@ -20,7 +20,7 @@ const dragon = {
   
 const battleMembers = { mage, warrior, dragon };
 
-let round = 0;
+// ---------------------------------------------------------------------------
 
 const dragonAttack = (dragon) => {
     const min = Math.ceil(15);
