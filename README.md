@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web
+## Fundamentos do Desenvolvimento Web :white_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
 
@@ -63,7 +63,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 7-3: _Testes unitários em JavaScript_
 - [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
-##### Bloco 8: JavaScript ES6 :hourglass_flowing_sand:
+##### Bloco 8: JavaScript ES6 :white_check_mark:
 
 - [X] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
@@ -74,7 +74,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: Assincronicidade & Callbacks :hourglass_flowing_sand:
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
